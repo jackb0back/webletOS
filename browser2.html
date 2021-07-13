@@ -1,0 +1,137 @@
+<style>
+    #Window {
+      position: absolute;
+      z-index: 9;
+      background-color: #f1f1f1;
+     
+      border: 1px solid #d3d3d3;
+      height: 500px;
+      margin: auto;
+      position:absolute;
+    top: 25%;
+    resize: both;
+    overflow: auto;
+  
+     
+    }
+  
+    #winCon {
+      
+    overflow: auto;
+    }
+    
+    #Windowheader {
+      padding: 10px;
+      cursor: move;
+      z-index: 10;
+      background-color: #2196F3;
+      color: #fff;
+      width: 500px;
+      height: 20px;
+      
+      
+     
+      
+    }
+  
+  
+  
+    #closeWin {
+      position: absolute;
+      right: -0px;
+      top: 0px;
+      width: 30px;
+      height: 40px;
+    }
+    </style>
+    
+    <div id="Window">
+      <div id="Windowheader">
+        <p>
+          
+          </p>
+        <button id="closeWin" onclick=' document.getElementById("Window").style.display = "none";'>X</button>
+      </div>
+     <div id="winCon">
+  
+     </div>
+    </div>
+    
+    <script>
+    //Make the DIV element draggagle:
+    dragElement(document.getElementById("Window"));
+    
+    function dragElement(elmnt) {
+      var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+      if (document.getElementById(elmnt.id + "header")) {
+        /* if present, the header is where you move the DIV from:*/
+        document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+      } else {
+        /* otherwise, move the DIV from anywhere inside the DIV:*/
+        elmnt.onmousedown = dragMouseDown;
+      }
+    
+      function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // get the mouse cursor position at startup:
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        // call a function whenever the cursor moves:
+        document.onmousemove = elementDrag;
+      }
+    
+      function elementDrag(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // calculate the new cursor position:
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        // set the element's new position:
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+      }
+    
+      function closeDragElement() {
+        /* stop moving when mouse button is released:*/
+        document.onmouseup = null;
+        document.onmousemove = null;
+      }
+    }
+  
+  
+    document.getElementById("Window").style.display = "none";
+    </script>
+    
+  
+    <script>
+      function Browser2() {
+      //<iframe id="inlineFrameExample"title="Inline Frame Example"width="1000" height="1000" src=""></iframe>
+        document.getElementById("Window").style.display = "block"; 
+        document.getElementById("winCon").innerHTML = ` 
+        <iframe id="frame" src="" height="500" width="1000" title="Iframe Example"></iframe>
+ 
+<textarea id="txt" name="w3review" rows="4" cols="50">
+    url (add https:// at the start)
+    </textarea>
+    <button onclick="javascript:GoBrow()" id="btn">
+    go
+</button>
+    `
+    document.getElementById("frame").style.display = "none";
+      }
+      function GoBrow() {
+            var test = document.getElementById("txt").value
+            document.getElementById("frame").style.display = "block"; 
+            document.getElementById("txt").style.display = "block"; 
+            document.getElementById("btn").style.display = "block";
+document.getElementById("frame").src = test
+
+         
+        }
+    </script>
+
+    

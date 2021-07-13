@@ -1,0 +1,1397 @@
+
+<!DOCTYPE html>
+
+
+    <div id="nav">
+
+        <ul id='qwe'>
+            <h1>
+                WEBLET OS
+            </h1>
+            
+            <li id="z"><a href="javascript:openSet()">Settings</a></li>
+            <li id="x"><a href="">blank</a></li>
+            <li id="c"><a href="">blank</a></li>
+            <li id="v"><a href="">blank</a></li>
+            <li id="b"><a href="">blank</a></li>
+            <li id="n"><a href="">blank</a></li>
+    
+          </ul>
+          <style>
+         #qwe {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: rgb(8, 250, 0);
+        }
+        
+        #z {
+          float: left;
+        }
+        #x {
+          float: left;
+        }
+        #c {
+          float: left;
+        }
+        #v {
+          float: left;
+        }
+        #b {
+          float: left;
+        }
+        #n {
+          float: left;
+        }
+        
+        #z a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        #z a:hover {
+          background-color: #111;
+        }
+
+
+        #x a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        #x a:hover {
+          background-color: #111;
+        }
+
+
+
+
+        #c a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        #c a:hover {
+          background-color: #111;
+        }
+
+
+
+        #v a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        #v a:hover {
+          background-color: #111;
+        }
+
+
+
+
+        #b a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        #b a:hover {
+          background-color: #111;
+        }
+
+
+
+
+        #n a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        #n a:hover {
+          background-color: #111;
+        }
+          </style>
+    </div>
+   
+</head>
+<body>
+  <style>
+    .app {
+      cursor: help;
+    }
+  </style>
+    <div id="apps">
+<style>
+.AppIMG {
+  width: 30px;
+  height: 30px;
+}
+#calcPNG {
+  width: 35px;
+  height: 35px;
+
+
+}
+#calculate {
+  text-align: center ;
+}
+</style>
+<button id="files" onclick="javascript:Files()">      <a href="javascript:Files()"><img src="https://www.traptct.com/wp-content/uploads/2020/04/file-folder-png-1.png" alt='test' class="AppIMG"></a>
+  Files</button>
+      <button id="Browser" onclick="javascript:Browser()">      <a href="javascript:Browser()"><img src="https://whoismatt.com/images/2016/7-july/adobe_proxy_logo.png" alt='test' class="AppIMG"></a>
+        proxy</button>
+        <button id="Browser" onclick="javascript:Browser2()">      <a href="javascript:Browser2()"><img src="https://i.pinimg.com/736x/b3/75/04/b375042ef44bce263981141865001557.jpg" alt='test' class="AppIMG"></a>
+          Browser2</button>
+      <button id="NotePad" onclick="javascript:NotePad()"> <a href="javascript:NotePad()"><img src="https://www.freeiconspng.com/uploads/notepad-icon-28.png" alt='test' class="AppIMG"></a>NotePad</button>
+      <button id="calculate" onclick="javascript:calc()"><a href="javascript:calc()"><img src="https://pngimg.com/uploads/calculator/calculator_PNG102230.png" alt='test' class="AppIMG" id="calcPNG"></a>calculator</button>
+      <button id="APPSTORE" onclick="javascript:Appstore()"><a href="javascript:Appstore"><img src="https://image.flaticon.com/icons/png/512/724/724933.png" alt='test' class="AppIMG"></a>Appstore</button>
+
+
+        <button id="0" class="app" onclick="javascript:RunApp(document.getElementById('0').id)">-</button>
+        <button id="1" class="app" onclick="javascript:RunApp(document.getElementById('1').id)">-</button>
+        <button id="2" class="app"onclick="javascript:RunApp(document.getElementById('2').id)">-</button>
+        <button id="3" class="app"onclick="javascript:RunApp(document.getElementById('3').id)">-</button>
+     
+        <button id="4" class="app" onclick="javascript:RunApp(document.getElementById('0').id)">-</button>
+        <button id="5" class="app" onclick="javascript:RunApp(document.getElementById('1').id)">-</button>
+        <button id="6" class="app"onclick="javascript:RunApp(document.getElementById('2').id)">-</button>
+        <button id="7" class="app"onclick="javascript:RunApp(document.getElementById('3').id)">-</button>
+     
+        <button id="8" class="app" onclick="javascript:RunApp(document.getElementById('0').id)">-</button>
+        <button id="9" class="app" onclick="javascript:RunApp(document.getElementById('1').id)">-</button>
+        <button id="10" class="app"onclick="javascript:RunApp(document.getElementById('2').id)">-</button>
+        <button id="11" class="app"onclick="javascript:RunApp(document.getElementById('3').id)">-</button>
+     
+        <button id="12" class="app" onclick="javascript:RunApp(document.getElementById('0').id)">-</button>
+        <button id="13" class="app" onclick="javascript:RunApp(document.getElementById('1').id)">-</button>
+        <button id="14" class="app"onclick="javascript:RunApp(document.getElementById('2').id)">-</button>
+        <button id="15" class="app"onclick="javascript:RunApp(document.getElementById('3').id)">-</button>
+     
+        <script>
+           var downloads
+           var AppNames = []
+
+function RunApp(num) {
+  var F=new Function (downloads[num]);
+
+return(F());
+    
+}
+document.getElementById("0").innerHTML = AppNames[0];
+document.getElementById("1").innerHTML = AppNames[1];
+document.getElementById("2").innerHTML = AppNames[2];
+document.getElementById("3").innerHTML = AppNames[3];
+
+document.getElementById("4").innerHTML = AppNames[0];
+document.getElementById("5").innerHTML = AppNames[1];
+document.getElementById("6").innerHTML = AppNames[2];
+document.getElementById("7").innerHTML = AppNames[3];
+document.getElementById("8").innerHTML = AppNames[0];
+document.getElementById("9").innerHTML = AppNames[1];
+document.getElementById("10").innerHTML = AppNames[2];
+document.getElementById("11").innerHTML = AppNames[3];
+document.getElementById("12").innerHTML = AppNames[0];
+document.getElementById("13").innerHTML = AppNames[1];
+document.getElementById("14").innerHTML = AppNames[2];
+document.getElementById("15").innerHTML = AppNames[3];
+
+
+
+document.getElementById("0").style.visibility = "hidden";
+document.getElementById("1").style.visibility = "hidden";
+document.getElementById("2").style.visibility = "hidden";
+document.getElementById("3").style.visibility = "hidden";
+document.getElementById("4").style.visibility = "hidden";
+document.getElementById("5").style.visibility = "hidden";
+document.getElementById("6").style.visibility = "hidden";
+document.getElementById("7").style.visibility = "hidden";
+document.getElementById("8").style.visibility = "hidden";
+document.getElementById("9").style.visibility = "hidden";
+document.getElementById("10").style.visibility = "hidden";
+document.getElementById("11").style.visibility = "hidden";
+document.getElementById("12").style.visibility = "hidden";
+document.getElementById("13").style.visibility = "hidden";
+document.getElementById("14").style.visibility = "hidden";
+document.getElementById("15").style.visibility = "hidden";
+
+
+
+
+            </script>
+
+</div>
+<div id="Brow">
+    
+</div>
+</body>
+<div id="start">
+<button id="startBTN" onclick='OpenStart()'>Weblet OS</button>
+
+
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" >
+  
+  <style>
+      body {
+    
+    
+      font-family: "Lato", sans-serif;
+    }
+    #clock {
+     
+      
+    
+      color: #000000;
+      display: flex;
+   
+      justify-content: center;
+      font-size: 30px;
+     
+    }
+  </style>
+
+
+
+  <div id="clock">
+  
+  <script>
+      function clock() {
+      let date = new Date();
+      let hrs = date.getHours();
+      let mins = date.getMinutes();
+      let secs = date.getSeconds();
+      let period = "AM";
+    
+      if (hrs == 0) hrs = 12;
+      if (hrs > 12) {
+        hrs = hrs - 12;
+        period = "PM";
+      }
+    
+      hrs = hrs < 10 ? `0${hrs}` : hrs;
+      mins = mins < 10 ? `0${mins}` : mins;
+      secs = secs < 10 ? `0${secs}` : secs;
+    
+      let time = `${hrs}:${mins}:${secs} ${period}`;
+      setInterval(clock, 1000);
+      document.getElementById("clock").innerText = time;
+    }
+    
+    clock();
+
+  </script>
+
+
+
+
+</div>
+<style>
+    body {
+background-color: aqua;
+height: 100%;
+
+    }
+#startBTN {
+    width: 90px;
+    height: 30px;
+    margin-left: 22px;
+}
+#start {
+    width: auto;
+    height: 30px;
+    background-color: chartreuse;
+    margin-top: 35%;
+    margin-left: -30px;
+    
+    
+}
+
+
+     a:visited{
+         color: rgb(0, 0, 0);
+
+    }
+    a:link {
+     color: rgb(204, 204, 204);
+}
+a:hover {
+color: hotpink;
+ }
+
+button {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(175, 175, 175);
+}
+
+#apps {
+    overflow: auto;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    <div id="settings">
+    <div id="mainTitleS">
+    <h3>
+        Settings
+        <button id="closeSett" onclick="closeSet()">X</button>
+    </h3>
+    
+    </div>
+    
+    <div id="MaincontentS"> 
+       
+<p>
+    test
+</p>
+    </div>
+    
+    </div>
+    <!-- overflow: auto;  -->
+    <style>
+       #closeSett {
+           width: 25px;
+           height: 25px;
+           margin-left: 96px;
+       }
+       
+        #settings {
+            background-color: lightgray;
+            width: 200px;
+            height: 250px;
+            position: absolute;
+            cursor: move;
+            resize: both;
+            align-items: center;
+            top: 25%;
+    
+        }
+    
+    #mainTitleS {
+        background-color: darkgray;
+        
+        position: relative;
+    top: -18px;
+       
+    
+        width:  200px;
+        height: 25px;
+    }
+    
+    #MaincontentS {
+        width:  200;
+        height: 205;
+        overflow: auto;
+    position: relative;
+    top: -18px;
+    }
+    
+    </style>
+    <script>
+       // Make the DIV element draggable:
+    dragElement(document.getElementById("settings"));
+    
+    function dragElement(elmnt) {
+      var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+      if (document.getElementById(elmnt.id + "header")) {
+        // if present, the header is where you move the DIV from:
+        document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+      } else {
+        // otherwise, move the DIV from anywhere inside the DIV:
+        elmnt.onmousedown = dragMouseDown;
+      }
+    
+      function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // get the mouse cursor position at startup:
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        // call a function whenever the cursor moves:
+        document.onmousemove = elementDrag;
+      }
+    
+      function elementDrag(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // calculate the new cursor position:
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        // set the element's new position:
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+      }
+    
+      function closeDragElement() {
+        // stop moving when mouse button is released:
+        document.onmouseup = null;
+        document.onmousemove = null;
+      }
+    }
+     </script>
+
+     
+     <script>
+             
+
+     </script>
+     
+     
+     
+<script>
+function openSet() {
+    document.getElementById("settings").style.display = "block";
+
+}
+
+function closeSet() {
+    document.getElementById("settings").style.display = "none";
+
+}
+
+closeSet()
+
+</script>
+
+     
+
+
+<!-- custom right click-->
+
+
+
+  
+
+    <style type="text/css">
+        .context-menu {
+            position: absolute;
+            text-align: center;
+            background: lightgray;
+            border: 1px solid black;
+        }
+  
+        .context-menu ul {
+            padding: 0px;
+            margin: 0px;
+            min-width: 150px;
+            list-style: none;
+        }
+  
+        .context-menu ul li {
+            padding-bottom: 7px;
+            padding-top: 7px;
+            border: 1px solid black;
+        }
+  
+        .context-menu ul li a {
+            text-decoration: none;
+            color: black;
+        }
+  
+        .context-menu ul li:hover {
+            background: darkgray;
+        }
+    </style>
+  
+
+  
+
+    
+    <div id="contextMenu" class="context-menu" 
+        style="display:none">
+        <ul>
+            <li><a href="javascript:openSet()">settings</a></li>
+            <li><a href="javascript:(function()%7Bjavascript%3A(function()%7Bjavascript%3A(function()%7B(function()%20%7Bvar%20x%20%3D%20document.createElement(%22script%22)%3Bx.src%20%3D%20%22https%3A%2F%2Fbitbucket.org%2F!api%2F2.0%2Fsnippets%2Fjackb0back%2FgBAXGa%2F80faabebd229970af33fe545b6ed7b20fa9bd97c%2Ffiles%2Fdev.js%22%3Bx.onload%20%3D%20alert(%22Loaded%20Developer%20Console!%22)%3Bdocument.head.appendChild(x)%3B%7D)()%7D)()%7D)()%3B%7D)()%3B">Dev</a></li>
+            <li><a href="javascript:moveApps()">move apps</a></li>
+            <li><a href="javascript:ReNameApp()">rename apps</a></li>
+            <li><a href="javascript:ViewApps()">My Apps</a></li>
+            <li><a href="javascript:Browser2()">Browser</a></li>
+            <li><a href="javascript:Mod()">Go to modded page</a></li>
+        </ul>
+    </div>
+  
+    <script>
+        document.onclick = hideMenu;
+        document.oncontextmenu = rightClick;
+  
+        function hideMenu() {
+            document.getElementById(
+                "contextMenu").style.display = "none"
+        }
+  
+        function rightClick(e) {
+            e.preventDefault();
+  
+            if (document.getElementById(
+                "contextMenu").style.display == "block")
+                hideMenu();
+            else {
+                var menu = document
+                    .getElementById("contextMenu")
+                      
+                menu.style.display = 'block';
+                menu.style.left = e.pageX + "px";
+                menu.style.top = e.pageY + "px";
+            }
+        }
+
+
+//mine 
+var move = false
+
+
+function ReNameApp() {
+    var ans = prompt('elment #')
+    AppNames[ans] = prompt('name')
+    document.getElementById(ans).innerHTML = AppNames[ans];
+
+
+}
+function moveApps() {
+ move = true
+}
+
+    </script>
+
+  
+<script>
+    function Browser() {
+      document.getElementById("Window").style.display = "block";
+        document.getElementById("winCon").innerHTML = `<iframe id="inlineFrameExample"
+    title="Inline Frame Example"
+    width="1000"
+    height="1000"
+    src="https://webublock1.glitch.me/">
+</iframe>`
+    }
+</script>
+
+<style>
+  #Window {
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+   
+    border: 1px solid #d3d3d3;
+    height: 500px;
+    margin: auto;
+    position:absolute;
+  top: 25%;
+  resize: both;
+  overflow: auto;
+
+   
+  }
+
+  #winCon {
+    
+  overflow: auto;
+  }
+  
+  #Windowheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+    width: 500px;
+    height: 20px;
+    
+    
+   
+    
+  }
+
+
+
+  #closeWin {
+    position: absolute;
+    right: -0px;
+    top: 0px;
+    width: 30px;
+    height: 40px;
+  }
+  </style>
+  
+  <div id="Window">
+    <div id="Windowheader">
+      <p>
+        
+        </p>
+      <button id="closeWin" onclick=' document.getElementById("Window").style.display = "none";'>X</button>
+    </div>
+   <div id="winCon">
+
+   </div>
+  </div>
+  
+  <script>
+  //Make the DIV element draggagle:
+  dragElement(document.getElementById("Window"));
+  
+  function dragElement(elmnt) {
+    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    if (document.getElementById(elmnt.id + "header")) {
+      /* if present, the header is where you move the DIV from:*/
+      document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+    } else {
+      /* otherwise, move the DIV from anywhere inside the DIV:*/
+      elmnt.onmousedown = dragMouseDown;
+    }
+  
+    function dragMouseDown(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // get the mouse cursor position at startup:
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      document.onmouseup = closeDragElement;
+      // call a function whenever the cursor moves:
+      document.onmousemove = elementDrag;
+    }
+  
+    function elementDrag(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // calculate the new cursor position:
+      pos1 = pos3 - e.clientX;
+      pos2 = pos4 - e.clientY;
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      // set the element's new position:
+      elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+      elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    }
+  
+    function closeDragElement() {
+      /* stop moving when mouse button is released:*/
+      document.onmouseup = null;
+      document.onmousemove = null;
+    }
+  }
+
+
+  document.getElementById("Window").style.display = "none";
+  </script>
+  
+
+
+
+<style>
+
+  #startMen {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #EEEEEE;
+      position: absolute;
+      bottom: 80px;
+      left: 0px;
+  }
+  
+  ul#startMen li a {
+      display: block;
+      color: #000000;
+      font-weight:bold;
+      padding: 8px 16px;
+      text-decoration: none;
+  }
+  
+  
+  ul#startMen li a:hover {
+      background-color: orange;
+      color: white;
+  }
+  
+  </style>
+  
+  
+  <script>
+    function Appstore() {
+    document.getElementById("Window").style.display = "block";
+
+      document.getElementById("winCon").innerHTML = `
+      
+
+
+    <div id="navA">
+
+        <ul id='qweA'>
+            <h1>
+                WEBLET OS APP STORE
+            </h1>
+            
+            <li id="za"><a href="">blank</a></li>
+            <li id="xa"><a href="">blank</a></li>
+            <li id="ca"><a href="">blank</a></li>
+            <li id="va"><a href="">blank</a></li>
+            <li id="ba"><a href="">blank</a></li>
+            <li id="na"><a href="">blank</a></li>
+    
+          </ul>
+          <style>
+         #qweA {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: rgb(8, 250, 0);
+        }
+        
+        #za {
+          float: left;
+        }
+        #xa {
+          float: left;
+        }
+        #ca {
+          float: left;
+        }
+        #va {
+          float: left;
+        }
+        #ba {
+          float: left;
+        }
+        #na {
+          float: left;
+        }
+        
+        #za a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        #za a:hover {
+          background-color: #111;
+        }
+
+
+        #xa a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        #xa a:hover {
+          background-color: #111;
+        }
+
+
+
+
+        #ca a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        #ca a:hover {
+          background-color: #111;
+        }
+
+
+
+        #va a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        #va a:hover {
+          background-color: #111;
+        }
+
+
+
+
+        #ba a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        #ba a:hover {
+          background-color: #111;
+        }
+
+
+
+
+        #na a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        #na a:hover {
+          background-color: #111;
+        }
+          </style>
+    </div>
+
+<div id="AppCON">
+<p>
+    <h3>
+        drawing:
+    </h3>
+    
+    <a href="javascript:download('draw')">donwload</a>
+    <br>
+    <h3>
+        custom cursors
+    </h3>
+    <a href="javascript:download('cc')">download</a>
+    <br>
+    <h3>
+        space shooter
+    </h3>
+    <a href="javascript:download('sps')">download</a>
+    <br>
+</p>
+<h3>
+    blank
+</h3>
+<a href="">download</a>
+<br>
+</p>
+<h3>
+    blank
+</h3>
+<a href="">download</a>
+<br>
+</p>
+<h3>
+    blank
+</h3>
+<a href="">download</a>
+<br>
+</p>
+<h3>
+    blank
+</h3>
+<a href="">download</a>
+<br>
+</p>
+<h3>
+    blank
+</h3>
+<a href="">download</a>
+<br>
+</p>
+<h3>
+    blank
+</h3>
+<a href="">download</a>
+<br>
+</p>
+<h3>
+    blank
+</h3>
+<a href="">download</a>
+<br>
+</p>
+<h3>
+    blank
+</h3>
+<a href="">download</a>
+<br>
+</p>
+<h3>
+    blank
+</h3>
+<a href="">download</a>
+<br>
+</p>
+</p>
+</div>
+
+
+<style>
+    body {
+background-color: aqua;
+
+
+    }
+    #appCon {
+        overflow: auto;
+    }
+  
+</style>
+
+
+`
+
+  }
+  
+
+  </script>
+  
+  
+  <ul id="startMen">
+      <li><a href="javascript:Appstore()">Appstore</a></li>
+      <li><a href="javascript:ViewApps()">My Apps</a></li>
+      <li><a href="javascript:Mod()">go to modded page</a></li>
+      <li><a href="#">blank</a></li>
+      <li><a href="javascript:CloseStart()">CLOSE</a></li>
+  </ul>
+  <script>
+     var toggleS = true
+     document.getElementById("startMen").style.display = "none";
+
+function OpenStart() {
+ 
+     document.getElementById("startMen").style.display = "block";
+}
+
+function CloseStart() {
+  document.getElementById("startMen").style.display = "none";
+
+}
+  </script>
+
+
+
+
+     
+
+<script>
+    
+  let saveFile = () => {
+    const html = document.getElementById('msg').value;
+
+
+      
+      // This variable stores all the data.
+      let data = html
+          
+      
+      // Convert the text to BLOB.
+      const textToBLOB = new Blob([data], { type: 'text/html' });
+      const sFileName = document.getElementById('fileName').value + '.html';	   // The file to save the data.
+
+      let newLink = document.createElement("a");
+      newLink.download = sFileName;
+
+      if (window.webkitURL != null) {
+          newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+      }
+      else {
+          newLink.href = window.URL.createObjectURL(textToBLOB);
+          newLink.style.display = "none";
+          document.body.appendChild(newLink);
+      }
+
+      newLink.click(); 
+  }
+
+  function NotePad() {
+    document.getElementById("Window").style.display = "block";
+
+      document.getElementById("winCon").innerHTML = `
+
+
+  <title>Save form Data in a Text File using JavaScript</title>
+  <style>
+      * {
+          box-sizing: border-box;
+      }
+    #text {
+          padding: 10px;
+          background-color: #f6f6f6;
+          overflow: hidden;
+      }
+    input[type=text], textarea, select {
+          font: 17px Calibri;
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+      }
+      input[type=button]{ 
+          font: 17px Calibri;
+          width: auto;
+          float: right;
+          cursor: pointer;
+          padding: 7px;
+      }
+  </style>
+
+  <div>
+      
+   
+      <div id="text">
+          <textarea id="msg" name="msg" placeholder="" style="height:100px"></textarea>
+          <p>
+              file name
+          </p>
+          <input type="text" id="fileName">
+      </div>
+      <div id="text">
+          <input type="button" id="bt" value="Save data to file" onclick="saveFile()" />
+      </div>
+
+  </div>
+
+`
+
+  }
+
+</script>
+
+<script>
+     
+  function calc() {
+    document.getElementById("Window").style.display = "block";
+
+      document.getElementById("winCon").innerHTML = `
+
+
+      <meta charset="utf-8">  
+   
+   <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">  
+   <!-- CSS property to create interactive  
+       calculator interface -->  
+   <style>  
+   
+
+input[type=button] {  
+ width: 60px;  
+ height: 60px;  
+ float: left;  
+ padding: 0;  
+ margin: 5px;  
+ box-sizing: border-box;  
+ background: #ecedef;  
+ border: none;  
+ font-size: 30px;  
+ line-height: 30px;  
+ border-radius: 50%;  
+ font-weight: 700;  
+ color: #5E5858;  
+ cursor: pointer;    
+}  
+input[type=text] {  
+ width: 270px;  
+ height: 60px;  
+ float: left;  
+ padding: 0;  
+ box-sizing: border-box;  
+ border: none;  
+ background: none;  
+ color: red;  
+ text-align: right;  
+ font-weight: 700;  
+ font-size: 60px;  
+ line-height: 60px;  
+ margin: 0 25px;  
+ }  
+.calculator {  
+ background-color: #c0c0c0;  
+ box-shadow: 0px 0px 0px 10px #666;  
+ border: 5px solid black;  
+ border-radius: 10px;  
+}  
+#display {  
+ height: 40px;  
+ text-align: right;  
+ background-color: black;  
+ border: 3px solid white;  
+ font-size: 18px;  
+ left: 2px;  
+ top: 2px;  
+ color: red;  
+}  
+.btnTop {  
+ color: white;  
+ background-color: #6f6f6f;  
+ font-size: 14px;  
+ margin: auto;  
+ width: 50px;  
+ height: 25px;  
+}     
+   </style>  
+
+ 
+
+   <form name="Calculator" class = "calculator" >  
+<table border="2" align="center" cellpadding="15" cellspacing="12" bgcolor="#c0c0c0">  
+<tr>  
+<td>  
+<input type="text" name="Input" Size="35" id="display">  
+<br>  
+</td>  
+</tr>  
+<tr>  
+<td>  
+<input type="button" name = "one" style="font-size:30px" value=" 1 " OnClick="Calculator.Input.value += '1'">  
+<input type="button" name = "two" style = "font-size:30px" value=" 2 " OnCLick="Calculator.Input.value += '2'">  
+<input type="button" name = "three" style="font-size:30px" value=" 3 " OnClick="Calculator.Input.value += '3'">  
+<input type="button" name="add" class ="btnTop" style="font-size:30px" value=" + " OnClick="Calculator.Input.value += ' + '">  
+<br>  
+<input type="button" name = "four" style="font-size:30px" value=" 4 " OnClick="Calculator.Input.value += '4'">  
+<input type="button" name = "five" style="font-size:30px" value=" 5 " OnCLick="Calculator.Input.value += '5'">  
+<input type="button" name = "six" style="font-size:30px" value=" 6 " OnClick="Calculator.Input.value += '6'">  
+<input type="button" name = "minus" style="font-size:30px" value=" - " OnClick="Calculator.Input.value += ' - '">  
+<br>  
+<input type="button" name = "seven" style="font-size:30px" value=" 7 " OnClick="Calculator.Input.value += '7'">  
+<input type="button" name = "eight" style="font-size:30px" value=" 8 " OnCLick="Calculator.Input.value += '8'">  
+<input type="button" name = "nine" style="font-size:30px" value=" 9 " OnClick="Calculator.Input.value += '9'">  
+<input type="button" name = "mul" style="font-size:30px" value=" * "   
+OnClick="Calculator.Input.value += ' * '">  
+<br>  
+<input type="button" name = "clear" style="font-size:30px" value=" c " OnClick="Calculator.Input.value = ''">  
+<input type="button" name="zero" style="font-size:30px" value=" 0 " OnClick="Calculator.Input.value += '0'">  
+<input type="button" name="DoIt" style="font-size:30px" value=" = " OnClick="Calculator.Input.value = eval(Calculator.Input.value)">  
+<input type="button" name="div" style="font-size:30px" value=" / " OnClick="Calculator.Input.value += ' / '">  
+<br>  
+</td>  
+ 
+</tr>  
+</table>  
+</form>  
+
+
+`
+
+  }
+
+
+
+  </script>
+ <script>
+  var downloads = []
+ 
+
+  function download(down) {
+    if(down == 'cc') {
+downloads.push(`var ans = null
+ans=prompt('cursor')
+var CursorPNG = ans
+  var cursor = document.createElement('img'); cursor.style.zIndex = 999; cursor.src = CursorPNG; cursor.style.position = 'fixed'; cursor.select = 'none'; cursor.id = 'cursor'; cursor.width = 25; cursor.height = 35; cursor.style.marginLeft = '-100px'; cursor.style.top = '0px'; cursor.style.pointerEvents = "none"; document.body.appendChild(cursor); var elems = document.body.getElementsByTagName("*"); for (var i =0;i<elems.length;i++){ elems[i].style.cursor = 'none'; } var urls = [CursorPNG]; var current = 0; document.onmousemove = function(){ document.getElementById('cursor').style.marginLeft = event.clientX-1 + 'px'; document.getElementById('cursor').style.marginTop = event.clientY-15 + 'px'; }; function change(){ current++; if (current>urls.length){ current = 0; } document.getElementById('cursor').src = urls[current]; } `)
+    var num123 =  AppNames.length
+    
+   
+   
+AppNames.push('custom cursors')
+document.getElementById(num123).innerHTML = 'custom cursors'
+document.getElementById(num123).style.visibility = "visible";
+
+
+}
+if(down == 'sps') {
+  
+downloads.push(` document.getElementById("Window").style.display = "block"; document.getElementById("winCon").innerHTML = '<iframe id="inlineFrameExample"title="Inline Frame Example"width="1000" height="1000" src="https://jackb0back.github.io/WebLetOS-apps1234/sps.html"></iframe>' `)
+
+    var num123 =  AppNames.length
+    
+   
+   
+AppNames.push('space shooter')
+document.getElementById(num123).innerHTML = 'space shooter'
+document.getElementById(num123).style.visibility = "visible";
+
+
+}
+if(down == 'draw') {
+  
+  downloads.push(` document.getElementById("Window").style.display = "block"; document.getElementById("winCon").innerHTML = '<iframe id="inlineFrameExample"title="Inline Frame Example"width="1000" height="1000" src="https://jackb0back.github.io/WebLetOS-apps1234/draw.html"></iframe>' `)
+
+  
+      var num123 =  AppNames.length
+      
+     
+     
+  AppNames.push('draw')
+  document.getElementById(num123).innerHTML = 'draw'
+  document.getElementById(num123).style.visibility = "visible";
+  
+  
+  }
+  }
+
+  
+</script>
+<script>
+  function ViewApps() {
+ document.getElementById("Window").style.display = "block";
+
+   document.getElementById("winCon").innerHTML = AppNames
+
+}
+
+
+</script>
+<script>
+  function Go() {
+      window.location.replace(document.getElementById('msg').value);
+
+  }
+   function Mod() {
+  document.getElementById("Window").style.display = "block";
+
+    document.getElementById("winCon").innerHTML = `
+
+
+   
+<style>
+    * {
+        box-sizing: border-box;
+    }
+  #text {
+        padding: 10px;
+        background-color: #f6f6f6;
+        overflow: hidden;
+    }
+  input[type=text], textarea, select {
+        font: 17px Calibri;
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    input[type=button]{ 
+        font: 17px Calibri;
+        width: auto;
+        float: right;
+        cursor: pointer;
+        padding: 7px;
+    }
+</style>
+
+<div>
+    
+ 
+    <div id="text">
+        <textarea id="msg" name="msg" placeholder="" style="height:100px"></textarea>
+      
+    
+    </div>
+    <div id="text">
+        <input type="button" id="bt" value="go" onclick="Go()" />
+    </div>
+
+</div>
+`
+
+}
+
+
+</script>
+
+
+<script>
+  function Files() {
+    document.getElementById("Window").style.display = "block";
+  
+      document.getElementById("winCon").innerHTML = `
+  
+  
+      <div id="MyFiles">
+
+<button onclick="">
+    add file
+</button>
+<div id="fileCON">
+
+</div>
+</div>
+<style>
+  #MyFiles {
+      width: 500px;
+      height: 500px;
+      border-color: cyan ;
+      background-color: cyan;
+      overflow: auto;
+  }
+</style>
+
+     
+  `
+}
+  
+  
+  
+  </script>
+  
+
+  
+  <script>
+    function Browser2() {
+    //<iframe id="inlineFrameExample"title="Inline Frame Example"width="1000" height="1000" src=""></iframe>
+      document.getElementById("Window").style.display = "block"; 
+      document.getElementById("winCon").innerHTML = ` 
+      <iframe id="frame" src="" height="500" width="1000" title="Iframe Example"></iframe>
+
+<textarea id="txt" name="w3review" rows="4" cols="50">
+  url (add https:// at the start)
+  </textarea>
+  <button onclick="javascript:GoBrow()" id="btn">
+  go
+</button>
+  `
+  document.getElementById("frame").style.display = "none";
+    }
+    function GoBrow() {
+          var test = document.getElementById("txt").value
+          document.getElementById("frame").style.display = "block"; 
+          document.getElementById("txt").style.display = "block"; 
+          document.getElementById("btn").style.display = "block";
+document.getElementById("frame").src = test
+
+       
+      }
+  </script>
+
+  
